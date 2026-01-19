@@ -8,4 +8,9 @@ spring:
     config:
       server:
         git: # git으로 관리되는 폴더 내 설정 파일 읽어옴(commit 상태여야 함)
-          uri: C:\SWCAMP22\10_msa\15_Choiyeonhoo\msa-root\config # [설정파일이 담긴 깃 레포지토리 경로]
+         # uri: C:\SWCAMP22\10_msa\15_Choiyeonhoo\msa-root\config # [설정파일이 담긴 깃 레포지토리 경로]
+          ## github private repository ㅇ녀결
+          uri: https://github.com/cyhhoo/config-server-test.git
+          username: cyhhoo
+          password: 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
+          default-label: main

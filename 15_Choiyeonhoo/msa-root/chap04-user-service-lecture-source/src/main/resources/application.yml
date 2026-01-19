@@ -35,7 +35,7 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
   mapper-locations: mappers/**/*.xml
-  type-aliases-package: com.ohgiraffers.userservice.query.dto
+  type-aliases-package: com.mycompany.userservice.query.dto
 
 # Config Server로 설정 이동
 #jwt:
@@ -43,7 +43,12 @@ mybatis:
 #  expiration: 1800000
 #  refresh-expiration: 604800000
 
-
+### 엔드포인트의 노출 여부 제어
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics, beans, httpexchanges
 
 
 
